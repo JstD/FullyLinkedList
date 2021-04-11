@@ -6,4 +6,4 @@ node.o: node.cpp node.h
 	g++ -c node.cpp
 # clean work on linux 
 clean: 
-	rm -rf *.o test
+	rm -rf *.o test .vscode
