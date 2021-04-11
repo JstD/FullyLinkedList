@@ -1,5 +1,7 @@
 #include "node.h"
-
+#include "node.cpp"
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
 /*
     This class define a list with suitable operators
 */
@@ -40,3 +42,5 @@ public:
     // friend ostream &operator<<(ostream &,SingleLinkedList&);
     // friend ifstream &operator>>(ostream &,SingleLinkedList&);
 };
+
+#endif

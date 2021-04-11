@@ -1,6 +1,6 @@
 /*S.t to test the most useful lib*/
 #include "node.h"
-
+#include "node.cpp"
 #include<iostream>
 using namespace std;
 int main(){
