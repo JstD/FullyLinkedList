@@ -20,7 +20,6 @@ public:
     T operator*(SingleLinkedListNode);
     T operator*(T);
     T operator/(T);
-    T operator()();
     T operator-();
     void operator +=(SingleLinkedListNode);
     void operator +=(T);
@@ -35,4 +34,6 @@ public:
     bool operator>=(SingleLinkedListNode);
     bool operator>=(T);
     bool operator==();
+    friend ostream &operator<<(ostream &,SingleLinkedListNode&);
+    friend ifstream &operator>>(ostream &,SingleLinkedListNode&);
 };

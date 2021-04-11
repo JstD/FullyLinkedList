@@ -37,4 +37,6 @@ public:
     SingleLinkedListNode operator[](int);
     void operator +=(SingleLinkedList);
     void operator *=(int);
+    // friend ostream &operator<<(ostream &,SingleLinkedList&);
+    // friend ifstream &operator>>(ostream &,SingleLinkedList&);
 };
