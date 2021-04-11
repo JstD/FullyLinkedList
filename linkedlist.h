@@ -26,4 +26,15 @@ public:
     SingleLinkedListNode* popAt(int); //delete the i-th element.
     SingleLinkedListNode* del(T); //delete one node with its value.
     SingleLinkedListNode* dels(T); //delete all nodes with their value.
+    SingleLinkedListNode* reverseList(); //reverse list
+    void traverseList(void*); visit all nodes in list and do somethings
+    /*
+    Methods below used to overloading operator
+    */
+    SingleLinkedList operator+(const SingleLinkedList); return new list = this list + arg list
+    SingleLinkedList operator*(const int); scale list x times, return other list
+    void operator=(const SingleLinkedList); copy others list to this list  
+    SingleLinkedListNode operator[](int);
+    void operator +=(SingleLinkedList);
+    void operator *=(int);
 };

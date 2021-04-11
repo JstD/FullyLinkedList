@@ -10,4 +10,29 @@ public:
     SingleLinkedListNode(); // default constructor
     SingleLinkedListNode(T); //  constructor with data
     SingleLinkedListNode(SingleLinkedListNode*); //copy constructor
+
+    /*
+    Methods below used to overloading operator
+    */
+    T operator+(SingleLinkedListNode);
+    T operator+(T);
+    T operator-(T);
+    T operator*(SingleLinkedListNode);
+    T operator*(T);
+    T operator/(T);
+    T operator()();
+    T operator-();
+    void operator +=(SingleLinkedListNode);
+    void operator +=(T);
+    void operator =(T);
+    void operator =(SingleLinkedListNode);
+    bool operator<(SingleLinkedListNode);
+    bool operator<(T);
+    bool operator>(SingleLinkedListNode);
+    bool operator>(T);
+    bool operator<=(SingleLinkedListNode);
+    bool operator<=(T);
+    bool operator>=(SingleLinkedListNode);
+    bool operator>=(T);
+    bool operator==();
 };
