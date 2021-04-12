@@ -4,6 +4,9 @@ It has fully operators to use
 */
 #ifndef NODE_H
 #define NODE_H
+#include<iostream>
+using namespace std;
+
 template <class T>
 class SingleLinkedListNode{
 public:
@@ -38,7 +41,13 @@ public:
     bool operator>=(T);
     bool operator==(T);
     bool operator==(SingleLinkedListNode);
-    // friend ostream &operator<<(ostream &,SingleLinkedListNode&);
-    // friend ifstream &operator>>(ostream &,SingleLinkedListNode&);
+    friend ostream &operator<<(ostream &out,SingleLinkedListNode<T>p){
+        out<<p.data;
+        return out;
+    }
+    // friend std::ifstream operator>>(std::ifstream &in,SingleLinkedListNode<T>&p){
+    //     in >> p.data;;
+    //     return in;
+    // }
 };
 #endif

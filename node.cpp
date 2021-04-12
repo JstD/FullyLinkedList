@@ -1,6 +1,5 @@
 #include "node.h"
-#include<iostream>
-using namespace std;
+
 /*
 Implement class of SingleLinkedListNode with its methods
 */
@@ -60,5 +59,75 @@ T SingleLinkedListNode<T>::operator/(SingleLinkedListNode<T> p){
 template <class T>
 T SingleLinkedListNode<T>::operator-(){
     return - this->data;
+};
+
+template <class T>
+void SingleLinkedListNode<T>::operator +=(SingleLinkedListNode<T> p){
+    this->data = this->data + p.data;
+};
+
+template <class T>
+void SingleLinkedListNode<T>::operator +=(T p){
+    this->data = this->data + p;
+};
+
+template <class T>
+void SingleLinkedListNode<T>::operator =(T p){
+    this->data = p;
+};
+
+template <class T>
+void SingleLinkedListNode<T>::operator =(SingleLinkedListNode<T> p){
+    this->data = p.data;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator <(SingleLinkedListNode<T> p){
+    return this->data < p.data;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator >(SingleLinkedListNode<T> p){
+    return this->data > p.data;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator >=(SingleLinkedListNode<T> p){
+    return this->data >= p.data;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator <=(SingleLinkedListNode<T> p){
+    return this->data <= p.data;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator ==(SingleLinkedListNode<T> p){
+    return this->data == p.data;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator >(T p){
+    return this->data > p;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator <(T p){
+    return this->data < p;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator <=(T p){
+    return this->data <= p;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator >=(T p){
+    return this->data >= p;
+};
+
+template <class T>
+bool SingleLinkedListNode<T>::operator ==(T p){
+    return this->data == p;
 };
 
