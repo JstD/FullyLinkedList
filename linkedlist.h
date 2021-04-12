@@ -18,7 +18,7 @@ public:
     void insertHead(T); // insert a node at header of list.
     void push(T); // insert a node at tail of list.
     void insertAt(T,int); // insert at an arbitrary position with index from 0.
-    SingleLinkedListNode<T> at(int); //return i-th element of list.
+    SingleLinkedListNode<T> &at(int); //return i-th element of list.
     void popBack(); // delete last element.
     void popHead(); //delete the first element.
     void popAt(int); //delete the i-th element.
@@ -34,7 +34,7 @@ public:
     SingleLinkedList operator*(const int); //scale list x times, return other list
     void operator=(SingleLinkedList); //copy others list to this list  
     
-    SingleLinkedListNode<T> operator[](int i);
+    SingleLinkedListNode<T> &operator[](int i);
     void operator +=(SingleLinkedList);
     void operator *=(int);
     // friend ostream &operator<<(ostream &,SingleLinkedList&);

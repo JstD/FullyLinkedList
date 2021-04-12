@@ -82,13 +82,13 @@ void SingleLinkedList<T>::insertAt(T data,int pos){
 }
 
 template<class T>
-SingleLinkedListNode<T> SingleLinkedList<T>::at(int pos){
+SingleLinkedListNode<T> &SingleLinkedList<T>::at(int pos){
     if(pos>-1 && pos<this->size){
         SingleLinkedListNode<T>*temp = this->head;
         for(int i=0;i<pos;i++){
             temp = temp->next;
         }
-        return temp;
+        return *temp;
     }
     else{
         cout<<"Indexed out of range";
@@ -194,6 +194,6 @@ void SingleLinkedList<T>::dels(T data){
 }
 
 template<class T>
-SingleLinkedListNode<T>SingleLinkedList<T>::operator[](int i){
+SingleLinkedListNode<T>& SingleLinkedList<T>::operator[](int i){
     return at(i);
 }

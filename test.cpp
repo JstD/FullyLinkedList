@@ -8,8 +8,8 @@ int main(){
     for(int i=0;i<10;i++){
         lst.push(i);
     }
-    lst[2]=3;
+    lst[0]=5;
     for(int i=0;i<10;i++){
-        cout<<lst[i]<<endl;
+        cout<<lst.at(i)<<endl;
     }
 }
