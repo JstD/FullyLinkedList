@@ -1,10 +1,20 @@
 /*S.t to test the most useful lib*/
-#include "node.h"
+// #include "node.h"
 #include "node.cpp"
 #include<iostream>
 using namespace std;
 int main(){
-    SingleLinkedListNode<int> p =  SingleLinkedListNode<int>(1);
-    SingleLinkedListNode<int>q =  SingleLinkedListNode<int>(2);
-    cout<<p+q;
+    // SingleLinkedListNode<string> p =  SingleLinkedListNode<string>("123");
+    // SingleLinkedListNode<string>q =  SingleLinkedListNode<string>("456");
+    // cout<<p-q;
+    string a = "123";
+    string b = "456";
+    string c;
+    try{
+        c = a-b;
+    }
+    catch(...){
+        cout<<'1';
+        exit(0);
+    }
 }

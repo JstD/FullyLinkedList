@@ -19,28 +19,46 @@ SingleLinkedListNode<T>::SingleLinkedListNode(SingleLinkedListNode* node){
 
 template <class T>
 T SingleLinkedListNode<T>::operator+(SingleLinkedListNode<T> p){
-    T result;
-    try{
-        result = this->data + p.data;
-    }
-    catch(...){
-        cout<<"Can't define operator '+' with "<<typeid(this->data).name()<<endl;
-        exit(-1);
-    }
-    return result;
+    return this->data + p.data;
 }
 
 template <class T>
 T SingleLinkedListNode<T>::operator+(T p){
-    T result;
-    try{
-        result = this->data + p;
-    }
-    catch(...){
-        cout<<"Can't define operator '+' with "<<typeid(p).name()<<endl;
-        exit(-1);
-    }
-    return result;
+    return this->data + p;
 }
+template <class T>
+T SingleLinkedListNode<T>::operator-(SingleLinkedListNode<T> p){
+    return this->data - p.data;
+};
 
+template <class T>
+T SingleLinkedListNode<T>::operator-(T p){
+    return this->data - p;
+};
+
+template <class T>
+T SingleLinkedListNode<T>::operator*(SingleLinkedListNode<T> p){
+    return this->data - p.data;
+};
+
+template <class T>
+T SingleLinkedListNode<T>::operator*(T p){
+    return this->data * p;
+};
+
+
+template <class T>
+T SingleLinkedListNode<T>::operator/(T p){
+    return this->data / p;
+};
+
+template <class T>
+T SingleLinkedListNode<T>::operator/(SingleLinkedListNode<T> p){
+    return this->data / p.data;
+};
+
+template <class T>
+T SingleLinkedListNode<T>::operator-(){
+    return - this->data;
+};
 
