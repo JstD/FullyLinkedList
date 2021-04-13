@@ -16,7 +16,7 @@ public:
     SingleLinkedListNode(T); //  constructor with data
     SingleLinkedListNode(SingleLinkedListNode*); //copy constructor
     /*
-    Methods below used to overloading operator
+    Methods below used to overloading operators
     */
     T operator+(SingleLinkedListNode);
     T operator+(T);

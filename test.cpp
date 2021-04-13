@@ -1,5 +1,4 @@
 /*S.t to test the most useful lib*/
-// #include "linkedlist.h"
 #include "linkedlist.cpp"
 #include<iostream>
 using namespace std;

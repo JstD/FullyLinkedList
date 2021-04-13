@@ -131,3 +131,4 @@ bool SingleLinkedListNode<T>::operator ==(T p){
     return this->data == p;
 };
 
+//
